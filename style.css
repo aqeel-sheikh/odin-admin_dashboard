@@ -16,6 +16,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #F5F5F5;
 }
 
 img, picture, video, canvas, svg {
@@ -41,4 +42,42 @@ h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
   isolation: isolate;
+}
+.wrapper{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 3fr 1fr;
+  grid-template-rows: 120px 1fr;
+}
+.sidebar{
+  background-color: #03A9F4;
+  grid-area: 1 / 1 / -1 / 2 ;
+
+}
+.header{
+  background-color: #fff;
+  box-shadow: 1px 0px 3px rgb(0 0 0 / 0.4);
+  grid-area: 1 / 2 / 2 / 4;
+}
+.projects{
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 40px repeat(3, 1fr) 20px;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid red;
+  
+  
+}
+.projects > h1{
+  grid-area: 1 / 1 / 2 / 3;
+}
+.extra{
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px 1fr 40px;
+  padding: 20px;
+  border: 1px solid blue;
 }
