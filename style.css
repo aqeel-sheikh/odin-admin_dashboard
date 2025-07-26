@@ -75,12 +75,13 @@ h6 {
 .wrapper {
   height: 100vh;
   display: grid;
-  grid-template-columns: 200px 3fr 1fr;
-  grid-template-rows: 120px 1fr;
+  grid-template-columns: 0.7fr 2fr 0.9fr;
+  grid-template-rows: 9rem 1fr;
 }
 .sidebar {
   background-color: #03a9f4;
   grid-area: 1 / 1 / -1 / 2;
+  padding: 1rem;
 }
 .header {
   background-color: #fff;
@@ -91,10 +92,9 @@ h6 {
   grid-area: 2 / 2 / 3 / 3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 40px repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
-
+  grid-template-rows: 1.9rem repeat(3, 1fr);
+  padding: 1.4rem 0 1.4rem 1.4rem;
+  column-gap: 20px;
   font-size: small;
 }
 .projects > h1 {
@@ -102,7 +102,7 @@ h6 {
 }
 .projects > article {
   background-color: #fff;
-  padding: 25px 20px 100px 20px;
+  padding: 1.5rem;
   border-radius: 10px;
   border-left: 5px solid #ffc107;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
@@ -110,6 +110,9 @@ h6 {
   flex-direction: column;
   position: relative;
   transition: ease-in-out;
+}
+.projects > article:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 20px;
 }
 .projects > article:hover {
   transform: scale(1.01);
@@ -130,7 +133,17 @@ h6 {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
   display: grid;
-  grid-template-rows: 40px 1fr 40px 1fr;
-  padding: 20px;
-  border: 1px solid blue;
+  grid-template-rows: 1.9rem 1fr 0.1fr 1fr;
+  padding: 1.4rem;
+
+  font-size: small;
+}
+.extra > article {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+.extra-text {
+  font-size: 0.7rem;
 }
