@@ -112,6 +112,9 @@ h6 {
   width: 32px;
 }
 /* Subheader 2 */
+.toolbar-left-side{
+  padding: 0rem 3rem;
+}
 button {
   border: none;
   background-color: #03a9f4;
