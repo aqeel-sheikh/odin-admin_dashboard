@@ -147,3 +147,27 @@ h6 {
 .extra-text {
   font-size: 0.7rem;
 }
+.trending {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card-img {
+  width: 50px;
+}
+.card-img img {
+  border-radius: 30px;
+}
+.trending-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.trending-user p:last-child{
+  opacity: 70%;
+}
+.trending-user p:first-child:hover{
+  font-weight: 700;
+}
