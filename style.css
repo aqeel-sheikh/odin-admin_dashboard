@@ -175,3 +175,36 @@ h6 {
 .trending-user p:first-child:hover{
   font-weight: 700;
 }
+
+/* Sidebar */
+.sidebar{
+  color: #fff;
+}
+.sidebar-heading{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#dashboard-icon{
+  width: 40px;
+}
+.icon{
+  width: 20px;
+}
+.sidebar-options-1, .sidebar-options-2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.2rem;
+  margin-left: 0.7rem;
+  gap: 1.6rem;
+
+}
+.sidebar-card{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sidebar-card h3:nth-child(n):hover{
+  cursor: pointer;
+  color: #0c4f6e;
+}
