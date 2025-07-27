@@ -230,3 +230,16 @@ h6 {
 .top-header-profile{
   width: 32px;
 }
+button{
+  border: none;
+  background-color: #03a9f4;
+  border-radius: 20px;
+  color: white;
+  padding: 0.2rem 1rem;
+  font-weight: 600;
+  transition: ease-in-out;
+  box-shadow: 0 0 8px #03a9f420;
+}
+button:hover{
+  transform: scale(1.1);
+}
